@@ -747,9 +747,10 @@
         has3d = testProps(['perspectiveProperty', 'WebkitPerspective', 'MozPerspective', 'OPerspective', 'msPerspective']),
         prefix = testPrefix(),
         extend = $.extend,
-        START_EVENT = 'touchstart mousedown',
-        MOVE_EVENT = 'touchmove mousemove',
-        END_EVENT = 'touchend mouseup',
+        touch = !!('ontouchstart' in window),
+        START_EVENT = touch ? 'touchstart' : 'mousedown',
+        MOVE_EVENT = touch ? 'touchmove' : 'mousemove',
+        END_EVENT = touch ? 'touchend' : 'mouseup',
         defaults = {
             // Options
             width: 70,
