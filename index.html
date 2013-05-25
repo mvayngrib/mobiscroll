@@ -23,6 +23,7 @@
 
     <script src="js/mobiscroll.core.js" type="text/javascript"></script>
 
+    <script src="js/mobiscroll.duration.js" type="text/javascript"></script>
     <script src="js/mobiscroll.datetime.js" type="text/javascript"></script>
     <script src="js/mobiscroll.select.js" type="text/javascript"></script>
 
@@ -68,6 +69,9 @@
                 },
                 'time': {
                     preset: 'time'
+                },
+                'duration': {
+                    preset: 'duration'
                 },
                 'credit': {
                     preset: 'date',
@@ -182,15 +186,16 @@
                         <option value="date">Date</option>
                         <option value="datetime">Datetime</option>
                         <option value="time">Time</option>
+                        <option value="duration">Duration</option>
                         <option value="credit">Credit card expiration</option>
                         <option value="select">Select</option>
                         <option value="select-opt">Group Select</option>
                     </select>
                 </div>
             </div>
-            <div data-role="fieldcontain" class="demo demo-date demo-datetime demo-time demo-credit">
+            <div data-role="fieldcontain" class="demo demo-date demo-datetime demo-time demo-duration demo-credit">
                 <label for="test">Click here to try</label>
-                <input name="test" id="test" class="demo-test-date demo-test-datetime demo-test-time demo-test-credit" />
+                <input name="test" id="test" class="demo-test-date demo-test-datetime demo-test-time demo-test-duration demo-test-credit" />
             </div>
             <div data-role="fieldcontain" class="demo demo-select">
                 <label for="city">Click here to try</label>
