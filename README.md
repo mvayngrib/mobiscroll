@@ -1,23 +1,3 @@
-This is a clone of the Mobiscroll project with a plugin added: Duration (alternately called Timespan), which allows you to select a time duration, such as "2 weeks, and 2 seconds" or "1 year and 2 months" or "3 days, 4 hours, 2 minutes, and 1 second".
-
-The wheels default to days, hours and minutes but you can choose your wheelset with the extra parameter in scroller settings:
-
-
-durationWheels: ['years', 'months', 'weeks', 'days', 'hours', 'minutes']
-
-
-Barebones example (you can open duration-example.html to see it in action, or index.html to see it with the other mobiscrollers):
-
-for an input element &lt;input type=&quot;text&quot; id=&quot;durationInput&quot; /&gt;
-
- 	$('#durationInput').mobiscroll().duration({
-			theme: 'default',
-			display: 'modal',
-			mode:'scroller',
-			durationWheels: ['hours', 'minutes', 'seconds']  
-		});  
-
-
 Mobiscroll
 ==========
 
